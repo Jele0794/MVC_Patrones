@@ -1,6 +1,6 @@
-package com.company;
+package com.jele;
 
-public class Main {
+public class ComparadorDeFichasTecnicas {
 
 
 
