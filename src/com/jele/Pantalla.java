@@ -6,6 +6,8 @@ import java.awt.*;
 
 /**
  * Created by Edmundo.
+ * <p/>
+ * Esta clase es la interfaz de la aplicación. Es el VIEW de la aplicacion.
  */
 
 
@@ -393,9 +395,7 @@ public class Pantalla {
     }
 
     public void iniciarPantalla() {
-
         principalFrame.setVisible(true);
-
     }
 
 
