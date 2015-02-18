@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8035750-8748-4c6f-8fd8-f146469e9778" name="Default" comment="View terminada, falta Model y Controller.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/datosFichas.ft" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/ComparadorDeFichasTecnicas.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/ComparadorDeFichasTecnicas.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/Controlador.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/Controlador.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/FichaTecnica.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/FichaTecnica.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/InfoGeneralAuto.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/InfoGeneralAuto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/Pantalla.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/Pantalla.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/UdlapSequentialFile.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/UdlapSequentialFile.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java" afterPath="$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/Controlador.java" afterPath="$PROJECT_DIR$/src/com/jele/Controlador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/EstructuraDatos.java" afterPath="$PROJECT_DIR$/src/com/jele/EstructuraDatos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/FichaTecnica.java" afterPath="$PROJECT_DIR$/src/com/jele/FichaTecnica.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/InfoGeneralAuto.java" afterPath="$PROJECT_DIR$/src/com/jele/InfoGeneralAuto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/Pantalla.java" afterPath="$PROJECT_DIR$/src/com/jele/Pantalla.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/UdlapSequentialFile.java" afterPath="$PROJECT_DIR$/src/com/jele/UdlapSequentialFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PD_MVC_FT.iws" />
@@ -45,11 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ComparadorDeFichasTecnicas.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComparadorDeFichasTecnicas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7944915" vertical-offset="0" max-vertical-offset="645">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5084746" vertical-offset="0" max-vertical-offset="472">
+              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -144,11 +141,12 @@
         <option value="$PROJECT_DIR$/src/com/jele/Pantalla.java" />
         <option value="$PROJECT_DIR$/src/com/jele/Controlador.java" />
         <option value="$PROJECT_DIR$/src/com/jele/InfoGeneralAuto.java" />
-        <option value="$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java" />
         <option value="$PROJECT_DIR$/src/com/jele/FichaTecnica.java" />
         <option value="$PROJECT_DIR$/src/datosFichas.txt" />
         <option value="$PROJECT_DIR$/src/com/jele/EstructuraDatos.java" />
         <option value="$PROJECT_DIR$/src/datosFichas.ft" />
+        <option value="$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java" />
+        <option value="$PROJECT_DIR$/src/README.txt" />
       </list>
     </option>
   </component>
@@ -464,7 +462,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -477,8 +475,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18844022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25494853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -786,14 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jele/EstructuraDatos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1320">
-          <caret line="37" column="109" selection-start-line="37" selection-start-column="109" selection-end-line="37" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jele/UdlapSequentialFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5880">
@@ -812,8 +802,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7944915" vertical-offset="0" max-vertical-offset="645">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jele/EstructuraDatos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1320">
+          <caret line="37" column="109" selection-start-line="37" selection-start-column="109" selection-end-line="37" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5084746" vertical-offset="0" max-vertical-offset="472">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
           <folding />
         </state>
       </provider>

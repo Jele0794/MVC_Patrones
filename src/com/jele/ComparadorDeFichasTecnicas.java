@@ -32,6 +32,5 @@ public class ComparadorDeFichasTecnicas {
         // Se llama al metodo iniciarPantalla.
         pantalla.iniciarPantalla();
 
-        // write your code here
     }
 }
