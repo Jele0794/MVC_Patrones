@@ -65,6 +65,7 @@ public class UdlapSequentialFile {
         String line;
         //-----------
         try {
+
             inputStream = new FileInputStream(file);
             fileReader = new FileReader(absoluteName);
             bufferedReader = new BufferedReader(fileReader);
@@ -84,7 +85,7 @@ public class UdlapSequentialFile {
             }//end catch
         }//end try
         catch (FileNotFoundException excepcion) {
-            System.out.println("No se encontr� el archivo!!!");
+            System.out.println("No se encontro el archivo!!!");
         }//end catch
         eof = false;
     }//end open

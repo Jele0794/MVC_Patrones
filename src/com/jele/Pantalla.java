@@ -5,9 +5,11 @@ import java.awt.*;
 
 
 /**
- * Created by Edmundo.
- * <p/>
- * Esta clase es la interfaz de la aplicación. Es el VIEW de la aplicacion.
+ * <p>
+ * Interfaz de la aplicacion. Es el VIEW de la aplicacion.
+ * </p>
+ * @author Edmundo
+ * @version 1.0
  */
 
 
@@ -103,7 +105,11 @@ public class Pantalla {
     JSeparator separador;
 
 
-    // Constructor de la clase Pantalla
+    /**
+     * Constructor de la clase pantalla.
+     * Crea un frame, le aniade un titulo, la posicion, el tamaño del frame y despues
+     * invoca el metodo crearElementos.
+     */
     public Pantalla() {
 
         principalFrame = new JFrame();
@@ -117,7 +123,9 @@ public class Pantalla {
 
     }
 
-    // Se agregaran los elementos de la interfaz
+    /**
+     * Este metodo crea los elementos de la interfaz y se los añade a la misma.
+     */
     public void crearElementos() {
 
         // Creacion de objetos de tipo JLabel
@@ -208,26 +216,32 @@ public class Pantalla {
         marcaLabel1.setText("Marca");
         marcaLabel1.setBounds(FIRST_COLUMN_X_LABEL, 135, LABEL_WIDTH, LABEL_HEIGHT);
         marcaTextField1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 150, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        marcaTextField1.setEditable(false);
 
         edicionLabel1.setText("Edicion");
         edicionLabel1.setBounds(FIRST_COLUMN_X_LABEL, 190, LABEL_WIDTH, LABEL_HEIGHT);
         edicionTextField1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 205, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        edicionTextField1.setEditable(false);
 
         potenciaLabel1.setText("Potencia");
         potenciaLabel1.setBounds(FIRST_COLUMN_X_LABEL, 245, LABEL_WIDTH, LABEL_HEIGHT);
         potenciaTextField1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 260, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        potenciaTextField1.setEditable(false);
 
         pesoLabel1.setText("Peso");
         pesoLabel1.setBounds(FIRST_COLUMN_X_LABEL, 300, LABEL_WIDTH, LABEL_HEIGHT);
         pesoTextField1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 315, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        pesoTextField1.setEditable(false);
 
         configMotorLabel1.setText("Config Motor");
         configMotorLabel1.setBounds(FIRST_COLUMN_X_LABEL, 355, LABEL_WIDTH, LABEL_HEIGHT);
         configMotorTextField1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 370, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        configMotorTextField1.setEditable(false);
 
         valvulasLabel1.setText("Valvulas");
         valvulasLabel1.setBounds(FIRST_COLUMN_X_LABEL, 410, LABEL_WIDTH, LABEL_HEIGHT);
         valvulasTextField1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 425, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        valvulasTextField1.setEditable(false);
 
         anteriorButton1.setText("<- Anterior");
         anteriorButton1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 530, BUTTON_WIDTH, BUTTON_HEGHT);
@@ -237,26 +251,32 @@ public class Pantalla {
         precioLabel1.setText("Precio");
         precioLabel1.setBounds(SECOND_COLUMN_X_LABEL, 80, LABEL_WIDTH, LABEL_HEIGHT);
         precioTextField1.setBounds(SECOND_COLUMN_X_TEXT_FIELD, 95, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        precioTextField1.setEditable(false);
 
         anioLabel1.setText("Anio");
         anioLabel1.setBounds(SECOND_COLUMN_X_LABEL, 190, LABEL_WIDTH, LABEL_HEIGHT);
         anioTextField1.setBounds(SECOND_COLUMN_X_TEXT_FIELD, 205, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        anioTextField1.setEditable(false);
 
         torqueLabel1.setText("Torque");
         torqueLabel1.setBounds(SECOND_COLUMN_X_LABEL, 245, LABEL_WIDTH, LABEL_HEIGHT);
         torqueTextField1.setBounds(SECOND_COLUMN_X_TEXT_FIELD, 260, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        torqueTextField1.setEditable(false);
 
         aspiradoLabel1.setText("Aspirado");
         aspiradoLabel1.setBounds(SECOND_COLUMN_X_LABEL, 300, LABEL_WIDTH, LABEL_HEIGHT);
         aspiradoTextField1.setBounds(SECOND_COLUMN_X_TEXT_FIELD, 315, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        aspiradoTextField1.setEditable(false);
 
         numCilindrosLabel1.setText("Num Cilindros");
         numCilindrosLabel1.setBounds(SECOND_COLUMN_X_LABEL, 355, LABEL_WIDTH, LABEL_HEIGHT);
         numCilindrosTextField1.setBounds(SECOND_COLUMN_X_TEXT_FIELD, 370, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        numCilindrosTextField1.setEditable(false);
 
         capCilindrosLabel1.setText("Cap Cilindros");
         capCilindrosLabel1.setBounds(SECOND_COLUMN_X_LABEL, 410, LABEL_WIDTH, LABEL_HEIGHT);
         capCilindrosTextField1.setBounds(SECOND_COLUMN_X_TEXT_FIELD, 425, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        capCilindrosTextField1.setEditable(false);
 
         siguienteButton1.setText("Siguiente ->");
         siguienteButton1.setBounds(SECOND_COLUMN_X_LABEL, 530, BUTTON_WIDTH, BUTTON_HEGHT);
@@ -265,30 +285,37 @@ public class Pantalla {
         modeloLabel2.setText("Modelo");
         modeloLabel2.setBounds(THIRD_COLUMN_X_LABEL, 80, LABEL_WIDTH, LABEL_HEIGHT);
         modeloTextField2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 95, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        modeloTextField2.setEditable(false);
 
         marcaLabel2.setText("Marca");
         marcaLabel2.setBounds(THIRD_COLUMN_X_LABEL, 135, LABEL_WIDTH, LABEL_HEIGHT);
         marcaTextField2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 150, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        marcaTextField2.setEditable(false);
 
         edicionLabel2.setText("Edicion");
         edicionLabel2.setBounds(THIRD_COLUMN_X_LABEL, 190, LABEL_WIDTH, LABEL_HEIGHT);
         edicionTextField2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 205, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        edicionTextField2.setEditable(false);
 
         potenciaLabel2.setText("Potencia");
         potenciaLabel2.setBounds(THIRD_COLUMN_X_LABEL, 245, LABEL_WIDTH, LABEL_HEIGHT);
         potenciaTextField2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 260, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        potenciaTextField2.setEditable(false);
 
         pesoLabel2.setText("Peso");
         pesoLabel2.setBounds(THIRD_COLUMN_X_LABEL, 300, LABEL_WIDTH, LABEL_HEIGHT);
         pesoTextField2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 315, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        pesoTextField2.setEditable(false);
 
         configMotorLabel2.setText("Config Motor");
         configMotorLabel2.setBounds(THIRD_COLUMN_X_LABEL, 355, LABEL_WIDTH, LABEL_HEIGHT);
         configMotorTextField2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 370, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        configMotorTextField2.setEditable(false);
 
         valvulasLabel2.setText("Valvulas");
         valvulasLabel2.setBounds(THIRD_COLUMN_X_LABEL, 410, LABEL_WIDTH, LABEL_HEIGHT);
         valvulasTextField2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 425, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        valvulasTextField2.setEditable(false);
 
         anteriorButton2.setText("<- Anterior");
         anteriorButton2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 530, BUTTON_WIDTH, BUTTON_HEGHT);
@@ -297,26 +324,32 @@ public class Pantalla {
         precioLabel2.setText("Precio");
         precioLabel2.setBounds(FOURTH_COLUMN_X_LABEL, 80, LABEL_WIDTH, LABEL_HEIGHT);
         precioTextField2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 95, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        precioTextField2.setEditable(false);
 
         anioLabel2.setText("Anio");
         anioLabel2.setBounds(FOURTH_COLUMN_X_LABEL, 190, LABEL_WIDTH, LABEL_HEIGHT);
         anioTextField2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 205, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        anioTextField2.setEditable(false);
 
         torqueLabel2.setText("Torque");
         torqueLabel2.setBounds(FOURTH_COLUMN_X_LABEL, 245, LABEL_WIDTH, LABEL_HEIGHT);
         torqueTextField2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 260, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        torqueTextField2.setEditable(false);
 
         aspiradoLabel2.setText("Aspirado");
         aspiradoLabel2.setBounds(FOURTH_COLUMN_X_LABEL, 300, LABEL_WIDTH, LABEL_HEIGHT);
         aspiradoTextField2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 315, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        aspiradoTextField2.setEditable(false);
 
         numCilindrosLabel2.setText("Num Cilindros");
         numCilindrosLabel2.setBounds(FOURTH_COLUMN_X_LABEL, 355, LABEL_WIDTH, LABEL_HEIGHT);
         numCilindrosTextField2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 370, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        numCilindrosTextField2.setEditable(false);
 
         capCilindrosLabel2.setText("Cap Cilindros");
         capCilindrosLabel2.setBounds(FOURTH_COLUMN_X_LABEL, 410, LABEL_WIDTH, LABEL_HEIGHT);
         capCilindrosTextField2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 425, TEXT_FIELD_WIDTH, TEXT_FIELD_HEGHT);
+        capCilindrosTextField2.setEditable(false);
 
         siguienteButton2.setText("Siguiente ->");
         siguienteButton2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 530, BUTTON_WIDTH, BUTTON_HEGHT);
@@ -394,6 +427,22 @@ public class Pantalla {
 
     }
 
+    /**
+     * Este metodo asigna el ActionListener de los botones al parametro controlador
+     * @param controlador Debe de asignarce el controllador de la aplicacion
+     */
+    public void setActionListener(Controlador controlador) {
+
+        anteriorButton1.addActionListener(controlador);
+        siguienteButton1.addActionListener(controlador);
+        anteriorButton2.addActionListener(controlador);
+        siguienteButton2.addActionListener(controlador);
+
+    }
+
+    /**
+     * Este metodo hace visible al frame.
+     */
     public void iniciarPantalla() {
         principalFrame.setVisible(true);
     }
