@@ -66,6 +66,9 @@ public class Pantalla {
     JLabel valvulasLabel2;
     JLabel capCilindrosLabel1;
     JLabel capCilindrosLabel2;
+    JLabel nombreCompletoLabel;
+    JLabel edadLabel;
+    JLabel duenioLabel;
 
     // TextField que se utilizaran
     JTextField modeloTextField1;
@@ -94,16 +97,19 @@ public class Pantalla {
     JTextField valvulasTextField2;
     JTextField capCilindrosTextField1;
     JTextField capCilindrosTextField2;
+    JTextField nombreCompletoTextField;
+    JTextField edadTextField;
+    JTextField duenioTextField;
 
     // Button que se utilizaran
     JButton anteriorButton1;
     JButton anteriorButton2;
     JButton siguienteButton1;
     JButton siguienteButton2;
+    JButton siguienteDuenioButton;
+    JButton anteriorDuenioButton;
 
-    // Separador
     JSeparator separador;
-
 
     /**
      * Constructor de la clase pantalla.
@@ -119,7 +125,6 @@ public class Pantalla {
         principalFrame.setResizable(false);
         principalFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         crearElementos();
-
 
     }
 
@@ -157,6 +162,9 @@ public class Pantalla {
         valvulasLabel2 = new JLabel();
         capCilindrosLabel1 = new JLabel();
         capCilindrosLabel2 = new JLabel();
+        nombreCompletoLabel = new JLabel();
+        edadLabel = new JLabel();
+        duenioLabel = new JLabel();
 
         // Creacion de objetos de tipo JTextView
         modeloTextField1 = new JTextField();
@@ -185,12 +193,18 @@ public class Pantalla {
         valvulasTextField2 = new JTextField();
         capCilindrosTextField1 = new JTextField();
         capCilindrosTextField2 = new JTextField();
+        nombreCompletoTextField = new JTextField();
+        edadTextField = new JTextField();
+        duenioTextField = new JTextField();
 
         // Creacion de objetos de tipo JButton
         anteriorButton1 = new JButton();
         anteriorButton2 = new JButton();
+        anteriorDuenioButton = new JButton();
         siguienteButton1 = new JButton();
         siguienteButton2 = new JButton();
+        siguienteDuenioButton = new JButton();
+
 
         // Creacion y configuracion del separador
         separador = new JSeparator(JSeparator.VERTICAL);
@@ -244,7 +258,7 @@ public class Pantalla {
         valvulasTextField1.setEditable(false);
 
         anteriorButton1.setText("<- Anterior");
-        anteriorButton1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 530, BUTTON_WIDTH, BUTTON_HEGHT);
+        anteriorButton1.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 480, BUTTON_WIDTH, BUTTON_HEGHT);
 
 
         // Segunda Columna
@@ -279,7 +293,7 @@ public class Pantalla {
         capCilindrosTextField1.setEditable(false);
 
         siguienteButton1.setText("Siguiente ->");
-        siguienteButton1.setBounds(SECOND_COLUMN_X_LABEL, 530, BUTTON_WIDTH, BUTTON_HEGHT);
+        siguienteButton1.setBounds(SECOND_COLUMN_X_LABEL, 480, BUTTON_WIDTH, BUTTON_HEGHT);
 
         // Tercera Columna
         modeloLabel2.setText("Modelo");
@@ -318,7 +332,7 @@ public class Pantalla {
         valvulasTextField2.setEditable(false);
 
         anteriorButton2.setText("<- Anterior");
-        anteriorButton2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 530, BUTTON_WIDTH, BUTTON_HEGHT);
+        anteriorButton2.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 480, BUTTON_WIDTH, BUTTON_HEGHT);
 
         // Cuarta Columna
         precioLabel2.setText("Precio");
@@ -352,7 +366,31 @@ public class Pantalla {
         capCilindrosTextField2.setEditable(false);
 
         siguienteButton2.setText("Siguiente ->");
-        siguienteButton2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 530, BUTTON_WIDTH, BUTTON_HEGHT);
+        siguienteButton2.setBounds(FOURTH_COLUMN_X_TEXT_FIELD, 480, BUTTON_WIDTH, BUTTON_HEGHT);
+
+        // Duenio Componentes
+        nombreCompletoLabel.setText("Nombre Completo");
+        nombreCompletoLabel.setBounds(FIRST_COLUMN_X_LABEL, 530, LABEL_WIDTH, LABEL_HEIGHT);
+        nombreCompletoTextField.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 545, 150, TEXT_FIELD_HEGHT);
+        nombreCompletoTextField.setEditable(false);
+
+        edadLabel.setText("Edad");
+        edadLabel.setBounds(SECOND_COLUMN_X_LABEL, 530, LABEL_WIDTH, LABEL_HEIGHT);
+        edadTextField.setBounds(SECOND_COLUMN_X_TEXT_FIELD, 545, 150, TEXT_FIELD_HEGHT);
+        edadTextField.setEditable(false);
+
+        duenioLabel.setText("Duenio de");
+        duenioLabel.setBounds(THIRD_COLUMN_X_LABEL, 530, LABEL_WIDTH+40, LABEL_HEIGHT);
+        duenioTextField.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 545, 150, TEXT_FIELD_HEGHT);
+        duenioTextField.setEditable(false);
+
+        anteriorDuenioButton.setText("<- Duenio Anterior");
+        anteriorDuenioButton.setBounds(FIRST_COLUMN_X_TEXT_FIELD, 580, BUTTON_WIDTH+10, BUTTON_HEGHT);
+
+        siguienteDuenioButton.setText("Duenio Siguiente ->");
+        siguienteDuenioButton.setBounds(THIRD_COLUMN_X_TEXT_FIELD, 580, BUTTON_WIDTH+10, BUTTON_HEGHT);
+
+
 
 
         // Anadir Componentes
@@ -424,6 +462,18 @@ public class Pantalla {
         principalFrame.add(capCilindrosTextField2);
         principalFrame.add(siguienteButton2);
 
+        // Duenio add
+        principalFrame.add(nombreCompletoLabel);
+        principalFrame.add(nombreCompletoTextField);
+        principalFrame.add(edadLabel);
+        principalFrame.add(edadTextField);
+        principalFrame.add(duenioLabel);
+        principalFrame.add(duenioTextField);
+        principalFrame.add(anteriorDuenioButton);
+        principalFrame.add(siguienteDuenioButton);
+        principalFrame.add(anteriorDuenioButton);
+        principalFrame.add(siguienteDuenioButton);
+
 
     }
 
@@ -437,6 +487,8 @@ public class Pantalla {
         siguienteButton1.addActionListener(controlador);
         anteriorButton2.addActionListener(controlador);
         siguienteButton2.addActionListener(controlador);
+        anteriorDuenioButton.addActionListener(controlador);
+        siguienteDuenioButton.addActionListener(controlador);
 
     }
 
@@ -446,6 +498,8 @@ public class Pantalla {
     public void iniciarPantalla() {
         principalFrame.setVisible(true);
     }
+
+
 
 
 }

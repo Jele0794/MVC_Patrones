@@ -20,14 +20,14 @@ public class ComparadorDeFichasTecnicas {
     public static void main(String[] args) {
 
         //Creamos el Model
-        EstructuraDatos estructuraDatos = new EstructuraDatos();
-        //Creamos el View
+        EstructuraDatosFicha estructuraDatosFicha = new EstructuraDatosFicha();
+        EstructuraDatosDuenio estructuraDatosDuenio = new EstructuraDatosDuenio();
+        //Creamos el ViewMenu
         Pantalla pantalla = new Pantalla();
         //Creamos el Controller
-        Controlador controlador = new Controlador(estructuraDatos, pantalla);
+        Controlador controlador = new Controlador(estructuraDatosFicha, estructuraDatosDuenio, pantalla);
         pantalla.setActionListener(controlador);
-        controlador.actualizaView1();
-        controlador.actualizaView2();
+        controlador.actualizarView();
 
         // Se llama al metodo iniciarPantalla.
         pantalla.iniciarPantalla();

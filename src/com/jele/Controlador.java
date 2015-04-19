@@ -1,5 +1,6 @@
 package com.jele;
 
+import com.jele.Builder.Duenio;
 import com.jele.Builder.FichaTecnica;
 
 import javax.swing.*;
@@ -16,21 +17,25 @@ import java.awt.event.ActionListener;
  */
 public class Controlador implements ActionListener {
 
-    private EstructuraDatos estructuraDatos;
+    private EstructuraDatosFicha estructuraDatosFicha;
+    private EstructuraDatosDuenio estructuraDatosDuenio;
     private Pantalla pantalla;
-    private int indice1, indice2;
+    private int indice1, indice2, indiceDuenio;
+
 
     /**
      * Constructor del controlador
      *
-     * @param estructuraDatos Model de la aplicacion
-     * @param pantalla View de la aplicacion
+     * @param estructuraDatosFicha Model de la aplicacion
+     * @param pantalla ViewMenu de la aplicacion
      */
-    public Controlador(EstructuraDatos estructuraDatos, Pantalla pantalla) {
-        this.estructuraDatos = estructuraDatos;
+    public Controlador(EstructuraDatosFicha estructuraDatosFicha, EstructuraDatosDuenio estructuraDatosDuenio, Pantalla pantalla) {
+        this.estructuraDatosFicha = estructuraDatosFicha;
+        this.estructuraDatosDuenio = estructuraDatosDuenio;
         this.pantalla = pantalla;
         indice1 = 0;
         indice2 = 1;
+        indiceDuenio = 0;
 
     }
 
@@ -43,9 +48,28 @@ public class Controlador implements ActionListener {
     private FichaTecnica obtieneDatosFichaTecnica(int indice) {
         FichaTecnica fichaTecnica;
         fichaTecnica = null;
-        if (estructuraDatos.hayDatos())
-            fichaTecnica = estructuraDatos.get(indice);
+        if (estructuraDatosFicha.hayDatos())
+            fichaTecnica = estructuraDatosFicha.get(indice);
         return fichaTecnica;
+    }
+
+    private Duenio obtieneDatosDuenio(int indice){
+        Duenio duenio;
+        duenio = null;
+        if(estructuraDatosDuenio.hayDatos())
+            duenio = estructuraDatosDuenio.get(indice);
+        return duenio;
+    }
+
+    public void actualizaViewDuenio(){
+        Duenio duenio;
+
+        duenio = obtieneDatosDuenio(indiceDuenio);
+        if (duenio != null){
+            pantalla.nombreCompletoTextField.setText(duenio.getNombre() + " " + duenio.getApellido());
+            pantalla.edadTextField.setText(String.valueOf(duenio.getEdad()));
+            pantalla.duenioTextField.setText(duenio.getDuenioDe());
+        }
     }
 
     /**
@@ -98,12 +122,28 @@ public class Controlador implements ActionListener {
         }
     }
 
+    public void decrementarIndiceDuenio(){
+        if (indiceDuenio == 0)
+            indiceDuenio = estructuraDatosDuenio.size() - 1;
+        else {
+            indiceDuenio = indiceDuenio - 1;
+        }
+    }
+
+    public void incrementarIndiceDuenio() {
+        if (indiceDuenio == estructuraDatosDuenio.size() - 1)
+            indiceDuenio = 0;
+        else {
+            indiceDuenio = indiceDuenio + 1;
+        }
+    }
+
     /**
      * Decrementa el primer indice.
      */
     public void decrementarIndice1() {
         if (indice1 == 0)
-            indice1 = estructuraDatos.size() - 1;
+            indice1 = estructuraDatosFicha.size() - 1;
         else {
             indice1 = indice1 - 1;
         }
@@ -114,7 +154,7 @@ public class Controlador implements ActionListener {
      */
     public void decrementarIndice2() {
         if (indice2 == 0)
-            indice2 = estructuraDatos.size() - 1;
+            indice2 = estructuraDatosFicha.size() - 1;
         else {
             indice2 = indice2 - 1;
         }
@@ -124,7 +164,7 @@ public class Controlador implements ActionListener {
      * Incrementa el primer indice.
      */
     public void incrementarIndice1() {
-        if (indice1 == estructuraDatos.size() - 1)
+        if (indice1 == estructuraDatosFicha.size() - 1)
             indice1 = 0;
         else {
             indice1 = indice1 + 1;
@@ -135,7 +175,7 @@ public class Controlador implements ActionListener {
      * Incrementa el segundo indice.
      */
     public void incrementarIndice2() {
-        if (indice2 == estructuraDatos.size() - 1)
+        if (indice2 == estructuraDatosFicha.size() - 1)
             indice2 = 0;
         else {
             indice2 = indice2 + 1;
@@ -156,7 +196,6 @@ public class Controlador implements ActionListener {
         if (botonPesionado == pantalla.anteriorButton1) {
             decrementarIndice1();
             actualizaView1();
-
         } else if (botonPesionado == pantalla.siguienteButton1) {
             incrementarIndice1();
             actualizaView1();
@@ -166,8 +205,18 @@ public class Controlador implements ActionListener {
         } else if (botonPesionado == pantalla.siguienteButton2) {
             incrementarIndice2();
             actualizaView2();
+        } else if (botonPesionado == pantalla.anteriorDuenioButton) {
+            decrementarIndiceDuenio();
+            actualizaViewDuenio();
+        } else if (botonPesionado == pantalla.siguienteDuenioButton) {
+            incrementarIndiceDuenio();
+            actualizaViewDuenio();
         }
+    }
 
-
+    public void actualizarView() {
+        actualizaView1();
+        actualizaView2();
+        actualizaViewDuenio();
     }
 }

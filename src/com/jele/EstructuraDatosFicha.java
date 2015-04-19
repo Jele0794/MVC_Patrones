@@ -2,8 +2,10 @@ package com.jele;
 
 import com.jele.Builder.ConcreteBuilderFicha;
 import com.jele.Builder.Director;
+import com.jele.Builder.Duenio;
 import com.jele.Builder.FichaTecnica;
 
+import java.util.Objects;
 import java.util.Vector;
 
 /**
@@ -16,7 +18,7 @@ import java.util.Vector;
  * @author Edmundo
  * @version 1.1
  */
-public class EstructuraDatos extends Vector<FichaTecnica> {
+public class EstructuraDatosFicha extends Vector<FichaTecnica> {
 
     UdlapSequentialFile repositorio;
     private final int NUMERO_DE_LINEAS_FICHA = 13;
@@ -24,7 +26,7 @@ public class EstructuraDatos extends Vector<FichaTecnica> {
     /**
      * Constructor de la estructura de datos.
      */
-    public EstructuraDatos() {
+    public EstructuraDatosFicha() {
         escrituraDeRepositorioAEstructura();
     }
 
@@ -42,7 +44,6 @@ public class EstructuraDatos extends Vector<FichaTecnica> {
         int numeroDeLineas, numeroDeRegistros, i, contadorDeLinea;
 
         contadorDeLinea = 0;
-
         repositorio = new UdlapSequentialFile("/Users/Edmundo/IdeaProjects/PD_MVC_FT/src", "datosFichas", "ft");
         repositorio.open();
         numeroDeLineas = repositorio.getNumberOfLines();
@@ -58,6 +59,7 @@ public class EstructuraDatos extends Vector<FichaTecnica> {
             i++;
             contadorDeLinea = contadorDeLinea + NUMERO_DE_LINEAS_FICHA;
         }
+
 
     }
 
