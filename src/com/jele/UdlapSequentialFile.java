@@ -90,6 +90,20 @@ public class UdlapSequentialFile {
         eof = false;
     }//end open
 
+    /**
+     * Search for an specific line
+     */
+    public String searchLine(int specificLine){
+        int i = 0;
+
+        while (i < specificLine){
+            readALine();
+        }
+        return readALine();
+
+
+    }
+
 
     /**
      * Constructs a new sequential text file and opens it.
