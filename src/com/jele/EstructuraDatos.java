@@ -1,5 +1,9 @@
 package com.jele;
 
+import com.jele.Builder.ConcreteBuilderFicha;
+import com.jele.Builder.Director;
+import com.jele.Builder.FichaTecnica;
+
 import java.util.Vector;
 
 /**
@@ -15,6 +19,7 @@ import java.util.Vector;
 public class EstructuraDatos extends Vector<FichaTecnica> {
 
     UdlapSequentialFile repositorio;
+    private final int NUMERO_DE_LINEAS_FICHA = 13;
 
     /**
      * Constructor de la estructura de datos.
@@ -29,34 +34,24 @@ public class EstructuraDatos extends Vector<FichaTecnica> {
      * para después agregar el objeto a la estructura de datos (Vector).
      */
     private void escrituraDerepositorioAEstructura() {
-        int numeroDeLineas, numeroDeRegistros, i;
-        String aspirado, configMotor, modelo, marca, edicion;
-        int potencia, torque, peso, numCilindros, numValvulas, anio;
-        float capCilindros, precio;
+
         FichaTecnica datoFicha;
+        ConcreteBuilderFicha concreteBuilderFicha;
+        Director director;
+
+        int numeroDeLineas, numeroDeRegistros, i, contadorDeLinea;
+
+        contadorDeLinea = 0;
 
         repositorio = new UdlapSequentialFile("/Users/Edmundo/IdeaProjects/PD_MVC_FT/src", "datosFichas", "ft");
         repositorio.open();
         numeroDeLineas = repositorio.getNumberOfLines();
-        numeroDeRegistros = numeroDeLineas / 13;
+        numeroDeRegistros = numeroDeLineas / NUMERO_DE_LINEAS_FICHA;
         i = 0;
 
-        while (i < numeroDeRegistros) {
-            modelo = repositorio.readString();
-            precio = (float) (repositorio.readDouble());
-            marca = repositorio.readString();
-            edicion = repositorio.readString();
-            anio = repositorio.readInt();
-            potencia = repositorio.readInt();
-            torque = repositorio.readInt();
-            peso = repositorio.readInt();
-            aspirado = repositorio.readString();
-            configMotor = repositorio.readString();
-            numCilindros = repositorio.readInt();
-            numValvulas = repositorio.readInt();
-            capCilindros = (float) (repositorio.readDouble());
 
-            datoFicha = new FichaTecnica(marca, edicion, modelo, anio, precio);
+
+           /* datoFicha = new FichaTecnica(marca, edicion, modelo, anio, precio);
             datoFicha.setPotencia(potencia);
             datoFicha.setTorque(torque);
             datoFicha.setPeso(peso);
@@ -65,9 +60,18 @@ public class EstructuraDatos extends Vector<FichaTecnica> {
             datoFicha.setNumCilindros(numCilindros);
             datoFicha.setNumValvulas(numValvulas);
             datoFicha.setCapCilindros(capCilindros);
+            add(datoFicha);*/
+        while (i < numeroDeRegistros) {
+            concreteBuilderFicha = new ConcreteBuilderFicha(contadorDeLinea);
+            director = new Director(concreteBuilderFicha);
+            director.construction();
+            datoFicha = concreteBuilderFicha.getProduct();
             add(datoFicha);
-            i = i + 1;
+            i++;
+            contadorDeLinea = contadorDeLinea + NUMERO_DE_LINEAS_FICHA;
         }
+
+
     }
 
     /**

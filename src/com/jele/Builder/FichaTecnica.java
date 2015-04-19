@@ -1,4 +1,4 @@
-package com.jele;
+package com.jele.Builder;
 
 /**
  * <p>
@@ -13,8 +13,11 @@ package com.jele;
  * @author Edmundo
  * @version 1.0
  */
-public class FichaTecnica extends InfoGeneralAuto {
+public class FichaTecnica{
 
+    private String modelo, marca, edicion;
+    private int anio;
+    private float precio;
     float capCilindros;
     String aspirado, configMotor;
     int potencia, torque, peso, numCilindros, numValvulas;
@@ -28,13 +31,21 @@ public class FichaTecnica extends InfoGeneralAuto {
      * @param anio Anio del vehiculo
      * @param precio Precio del vehiculo
      */
-    public FichaTecnica(String marca, String edicion, String modelo, int anio, float precio) {
-        super();
-        setMarca(marca);
-        setModelo(modelo);
-        setEdicion(edicion);
-        setAnio(anio);
-        setPrecio(precio);
+    public FichaTecnica(String marca, String edicion, String modelo, int anio, float precio, float capCilindros, String aspirado,
+                        String configMotor, int potencia, int torque, int peso, int numCilindros, int numValvulas) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.edicion = edicion;
+        this.anio = anio;
+        this.precio = precio;
+        this.capCilindros = capCilindros;
+        this.aspirado = aspirado;
+        this.configMotor = configMotor;
+        this.potencia = potencia;
+        this. torque = torque;
+        this.peso = peso;
+        this.numCilindros = numCilindros;
+        this.numValvulas = numValvulas;
 
     }
 
@@ -44,7 +55,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade la potencia del vehiculo
      * @param potencia Potencia del vehiculo
      */
-    protected void setPotencia(int potencia) {
+    public void setPotencia(int potencia) {
         if (potencia > 10)
             this.potencia = potencia;
     }
@@ -53,7 +64,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade el torque del vehiculo
      * @param torque Torque del vehiculo
      */
-    protected void setTorque(int torque) {
+    public void setTorque(int torque) {
         this.torque = torque;
 
     }
@@ -62,7 +73,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade el peso del vehiculo
      * @param peso Peso del vehiculo
      */
-    protected void setPeso(int peso) {
+    public void setPeso(int peso) {
         this.peso = peso;
     }
 
@@ -70,7 +81,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade el tipo de aspirado del vehiculo
      * @param aspirado Tipo de aspirdo del vehiculo
      */
-    protected void setAspirado(String aspirado) {
+    public void setAspirado(String aspirado) {
         this.aspirado = aspirado;
     }
 
@@ -78,7 +89,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade la configuracion del motor del vehiculo. (motor lineal o en v).
      * @param configMotor Configuracion del motor del vehiculo
      */
-    protected void setConfigMotor(String configMotor) {
+    public void setConfigMotor(String configMotor) {
         this.configMotor = configMotor;
     }
 
@@ -86,7 +97,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade el numero de cilindros del motor del vehiculo
      * @param numCilindros Numero de cilindros del vehiculo
      */
-    protected void setNumCilindros(int numCilindros) {
+    public void setNumCilindros(int numCilindros) {
         this.numCilindros = numCilindros;
     }
 
@@ -94,7 +105,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade el numero de valvulas del motor del vehiculo
      * @param numValvulas Numero de valvulas del vehiculo
      */
-    protected void setNumValvulas(int numValvulas) {
+    public void setNumValvulas(int numValvulas) {
         this.numValvulas = numValvulas;
     }
 
@@ -102,7 +113,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Aniade la capacidad de los cilindros del vehiculo (2.0, 2.4, 5.0, etc.)
      * @param capCilindros Capacidad de los cilindros del vehiculo
      */
-    protected void setCapCilindros(float capCilindros) {
+    public void setCapCilindros(float capCilindros) {
         this.capCilindros = capCilindros;
     }
 
@@ -114,7 +125,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa la potencia del motor del vehiculo.
      * @return int potencia
      */
-    protected int getPotencia() {
+    public int getPotencia() {
         return potencia;
     }
 
@@ -122,7 +133,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa el torque del motor del vehiculo.
      * @return int torque
      */
-    protected int getTorque() {
+    public int getTorque() {
         return torque;
     }
 
@@ -130,7 +141,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa el peso del motor del vehiculo.
      * @return int peso
      */
-    protected int getPeso() {
+    public int getPeso() {
         return peso;
     }
 
@@ -138,7 +149,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa el tipo de aspirado del motor del vehiculo.
      * @return String aspirado
      */
-    protected String getAspirado() {
+    public String getAspirado() {
         return aspirado;
     }
 
@@ -146,7 +157,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa la configuracion del motor del vehiculo. (Aspirado o turbo)
      * @return String configMotor
      */
-    protected String getConfigMotor() {
+    public String getConfigMotor() {
         return configMotor;
     }
 
@@ -154,7 +165,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa el numero de cilindros del motor del vehiculo.
      * @return int numCilindros
      */
-    protected int getNumCilindros() {
+    public int getNumCilindros() {
         return numCilindros;
     }
 
@@ -162,7 +173,7 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa el numero de valvulas del motor del vehiculo.
      * @return int numValvulas
      */
-    protected int getNumValvulas() {
+    public int getNumValvulas() {
         return numValvulas;
     }
 
@@ -170,8 +181,48 @@ public class FichaTecnica extends InfoGeneralAuto {
      * Regresa la capacidad (litros) de los cilindros del motor del vehiculo.
      * @return float CapCilindros
      */
-    protected float getCapCilindros() {
+    public float getCapCilindros() {
         return capCilindros;
+    }
+
+    /**
+     * Regresa el modelo del vehiculo.
+     * @return String modelo
+     */
+    public String getModelo(){
+        return modelo;
+    }
+
+    /**
+     * Regresa la marca del vehiculo.
+     * @return marca
+     */
+    public String getMarca(){
+        return marca;
+    }
+
+    /**
+     * Regresa la edicion del vehiculo.
+     * @return edicion
+     */
+    public String getEdicion(){
+        return edicion;
+    }
+
+    /**
+     * Regresa el anio del vehiculo.
+     * @return anio
+     */
+    public int getAnio(){
+        return anio;
+    }
+
+    /**
+     * Regresa el precio del vehiculo.
+     * @return precio
+     */
+    public float getPrecio(){
+        return precio;
     }
 
 
