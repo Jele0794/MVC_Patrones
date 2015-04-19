@@ -5,7 +5,7 @@ package com.jele;
  * Clase abstracta que representa la informacion mas general de un vehiculo.
  * </p>
  * @author Edmundo
- * @version 1.0
+ * @version 1.0.1
  */
 public abstract class InfoGeneralAuto {
 
@@ -19,7 +19,7 @@ public abstract class InfoGeneralAuto {
      * Aniade el modelo del vehiculo.
      * @param modelo Modelo del vehiculo
      */
-    protected void setModelo(String modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
@@ -27,7 +27,7 @@ public abstract class InfoGeneralAuto {
      * Aniade la marca del vehiculo.
      * @param marca Marca del vehiculo
      */
-    protected void setMarca(String marca) {
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
@@ -35,7 +35,7 @@ public abstract class InfoGeneralAuto {
      * Aniade la edicion del vehiculo.
      * @param edicion Edicion del vehiculo
      */
-    protected void setEdicion(String edicion) {
+    public void setEdicion(String edicion) {
         this.edicion = edicion;
     }
 
@@ -43,7 +43,7 @@ public abstract class InfoGeneralAuto {
      * Aniade el anio del vehiculo.
      * @param anio Anio del vehiculo
      */
-    protected void setAnio(int anio) {
+    public void setAnio(int anio) {
         if(anio >= 1800 && anio <= 2100)
             this.anio = anio;
     }
@@ -52,7 +52,7 @@ public abstract class InfoGeneralAuto {
      * Aniade el precio del vehiculo.
      * @param precio Precio del vehiculo
      */
-    protected void setPrecio(float precio){
+    public void setPrecio(float precio){
         if(precio >= 1000.00)
             this.precio = precio;
     }
@@ -63,7 +63,7 @@ public abstract class InfoGeneralAuto {
      * Regresa el modelo del vehiculo.
      * @return String modelo
      */
-    protected String getModelo(){
+    public String getModelo(){
         return modelo;
     }
 
@@ -71,7 +71,7 @@ public abstract class InfoGeneralAuto {
      * Regresa la marca del vehiculo.
      * @return marca
      */
-    protected String getMarca(){
+    public String getMarca(){
         return marca;
     }
 
@@ -79,7 +79,7 @@ public abstract class InfoGeneralAuto {
      * Regresa la edicion del vehiculo.
      * @return edicion
      */
-    protected String getEdicion(){
+    public String getEdicion(){
         return edicion;
     }
 
@@ -87,7 +87,7 @@ public abstract class InfoGeneralAuto {
      * Regresa el anio del vehiculo.
      * @return anio
      */
-    protected int getAnio(){
+    public int getAnio(){
         return anio;
     }
 
@@ -95,7 +95,7 @@ public abstract class InfoGeneralAuto {
      * Regresa el precio del vehiculo.
      * @return precio
      */
-    protected float getPrecio(){
+    public float getPrecio(){
         return precio;
     }
 

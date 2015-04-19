@@ -1,14 +1,16 @@
 package com.jele;
 
 import java.io.*;
+import java.util.Vector;
 
 //////////////////////////////////////
 
 /**
  * A sequential text file.
+ * UPDATE: open() method was modified
  *
  * @author Gerardo Ayala.
- * @version December 2014.
+ * @version December 2014. V1.0.1
  */
 public class UdlapSequentialFile {
 
@@ -61,8 +63,9 @@ public class UdlapSequentialFile {
     /**
      * Opens an existing sequential text file.
      */
-    public void open() {
+    public Vector<String> open() {
         String line;
+        Vector<String> lines = new Vector<String>();
         //-----------
         try {
 
@@ -72,6 +75,7 @@ public class UdlapSequentialFile {
             numberOfLines = 0;
             while (!eof) {
                 line = readALine();
+                lines.add(line);
                 numberOfLines = numberOfLines + 1;
             }//end while
             try {
@@ -88,7 +92,10 @@ public class UdlapSequentialFile {
             System.out.println("No se encontro el archivo!!!");
         }//end catch
         eof = false;
+        return lines;
     }//end open
+
+
 
 
     /**
