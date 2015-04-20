@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8035750-8748-4c6f-8fd8-f146469e9778" name="Default" comment="View terminada, falta Model y Controller.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/ComparadorDeFichasTecnicas.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/ComparadorDeFichasTecnicas.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/Pantalla.class" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/com/jele/Pantalla.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java" afterPath="$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jele/Pantalla.java" afterPath="$PROJECT_DIR$/src/com/jele/Pantalla.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PD_MVC_FT/datosDuenios.do" afterPath="$PROJECT_DIR$/out/production/PD_MVC_FT/datosDuenios.do" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/datosDuenios.do" afterPath="$PROJECT_DIR$/src/datosDuenios.do" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PD_MVC_FT.iws" />
@@ -30,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ComparadorDeFichasTecnicas.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComparadorDeFichasTecnicas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8727273" vertical-offset="0" max-vertical-offset="630">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="630">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -90,8 +96,8 @@
       <file leaf-file-name="datosDuenios.do" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/datosDuenios.do">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pantalla.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pantalla.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jele/Pantalla.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7055" max-vertical-offset="7635">
-              <caret line="501" column="0" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.57272726" vertical-offset="1575" max-vertical-offset="8205">
+              <caret line="126" column="41" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,10 +193,10 @@
         <option value="$PROJECT_DIR$/src/com/jele/EstructuraDatosFicha.java" />
         <option value="$PROJECT_DIR$/src/com/jele/EstructuraDatosDuenio.java" />
         <option value="$PROJECT_DIR$/src/com/jele/Builder/ConcreteBuilderDuenio.java" />
-        <option value="$PROJECT_DIR$/src/datosDuenios.do" />
-        <option value="$PROJECT_DIR$/src/com/jele/Pantalla.java" />
         <option value="$PROJECT_DIR$/src/com/jele/Controlador.java" />
         <option value="$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java" />
+        <option value="$PROJECT_DIR$/src/datosDuenios.do" />
+        <option value="$PROJECT_DIR$/src/com/jele/Pantalla.java" />
       </list>
     </option>
   </component>
@@ -240,8 +246,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,30 +296,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PD_MVC_FT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PD_MVC_FT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,7 +587,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -623,7 +607,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24391988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30361447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30361447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1093,24 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datosDuenios.do">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jele/Pantalla.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7055" max-vertical-offset="7635">
-          <caret line="501" column="0" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jele/Controlador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2840" max-vertical-offset="3405">
@@ -1121,11 +1087,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/datosDuenios.do">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jele/ComparadorDeFichasTecnicas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8727273" vertical-offset="0" max-vertical-offset="630">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jele/Pantalla.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57272726" vertical-offset="1575" max-vertical-offset="8205">
+          <caret line="126" column="41" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

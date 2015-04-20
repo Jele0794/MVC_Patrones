@@ -7,13 +7,19 @@ import java.awt.*;
 /**
  * <p>
  * Interfaz de la aplicacion. Es el VIEW de la aplicacion.
+ * Se implementa Singleton
  * </p>
  * @author Edmundo
- * @version 1.0
+ * @version 1.1
  */
 
 
 public class Pantalla {
+
+
+    private static Pantalla pantallaUnica;
+    private static boolean aunNoHayUnObjeto = true;
+
 
     // Frame a utilizar
     JFrame principalFrame;
@@ -116,7 +122,13 @@ public class Pantalla {
      * Crea un frame, le aniade un titulo, la posicion, el tamaño del frame y despues
      * invoca el metodo crearElementos.
      */
-    public Pantalla() {
+    public Pantalla() throws Exception{
+
+        // Al crear el objeto, se marcara con una bandera que ya existe UN objeto que debe de ser unico
+        if(aunNoHayUnObjeto)
+            aunNoHayUnObjeto = false;
+        else
+            throw new Exception("No podemos tener otro View.");
 
         principalFrame = new JFrame();
         principalFrame.setTitle("Comparacion de Fichas Técnicas");
@@ -126,6 +138,32 @@ public class Pantalla {
         principalFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         crearElementos();
 
+    }
+
+
+    /**
+     * Metodo que sirve para obtener el unico objeto
+     * @return pantallaUnica
+     */
+    public static synchronized Pantalla Instance(){
+        if (aunNoHayUnObjeto)
+        {
+            // debe tratarse de crear
+            try
+            {
+                pantallaUnica = new Pantalla();
+                aunNoHayUnObjeto = false;
+            }//end try
+            catch(Exception excepcion)
+            {
+                System.out.println(excepcion);
+            }//end catch
+            return pantallaUnica;
+        }//end if
+        else
+        {
+            return pantallaUnica;
+        }//end else
     }
 
     /**

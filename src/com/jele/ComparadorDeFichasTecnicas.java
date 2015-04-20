@@ -5,7 +5,7 @@ package com.jele;
  * Clase principal.
  * </p>
  * @author Edmundo
- * @version 1.0
+ * @version 1.1
  */
 
 public class ComparadorDeFichasTecnicas {
@@ -23,7 +23,7 @@ public class ComparadorDeFichasTecnicas {
         EstructuraDatosFicha estructuraDatosFicha = new EstructuraDatosFicha();
         EstructuraDatosDuenio estructuraDatosDuenio = new EstructuraDatosDuenio();
         //Creamos el ViewMenu
-        Pantalla pantalla = new Pantalla();
+        Pantalla pantalla =  Pantalla.Instance();
         //Creamos el Controller
         Controlador controlador = new Controlador(estructuraDatosFicha, estructuraDatosDuenio, pantalla);
         pantalla.setActionListener(controlador);
